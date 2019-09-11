@@ -6,6 +6,7 @@
 	background-color: #fefefe;
 	top: 20px;
 	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px 4px 8px 0px;
 }
 
 .normal {
@@ -19,9 +20,134 @@
 	top: 0px;
 }
 
+.header > div:nth-child(1) {
+	height: 100%;
+	width: 200px;
+	display: inline-block;
+}
+
+.header > div:nth-child(2) {
+	height: 100%;
+	width: calc(100% - 200px);
+	display: inline-block;
+}
+
+.header > div:nth-child(2) > ul {
+	list-style: none;
+	float: right;
+	padding-right: 10px;
+}
+
+.header > div:nth-child(2) > ul > li {
+	display: inline-block;
+}
+
+.header > div:nth-child(2) > ul > li > a {
+	text-decoration: none;
+	color: rgb(166, 169, 171);
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0px 10px 0px 10px;
+	line-height: 29px;
+}
+
+.header > div:nth-child(2) > ul > li > a:hover {
+	padding-bottom: 16px;
+	border-bottom: 3px solid #3c60ff;
+}
+
+.header > div:nth-child(2) > ul > li:nth-child(4) > a {
+	margin-left: 10px !important;
+}
+
+.header-button {
+	padding: 7.5px 17.5px 7.5px 17.5px !important;
+	border-radius: 5px;
+	border: 2px solid transparent;
+	margin: 0px 5px 0px 5px !important;
+	transition: 0.1s ease-in-out;
+}
+
+.header-button:hover {
+	padding-bottom: 7.5px;
+}
+
+.loginButton {
+	border-color:#3c60ff;
+	border-bottom: 2px solid #3c60ff !important;
+	color: #3c60ff !important;
+}
+
+.loginButton:hover {
+	background-color: #3c60ff;
+	color: #fff !important;
+}
+
+.signUpButton {
+	background-color: #3c60ff;
+	color: #fff !important;
+}
+
+.signUpButton:hover {
+	background-color: #5675ff;
+	border-bottom: 2px solid transparent !important;
+}
+
+.header > div:nth-child(2) > div {
+	margin-right: 15px;
+	float: right;
+	margin-top: 22px;
+}
+
+.header > div:nth-child(3) {
+	display: none;
+	width: 100%;
+	top: 70px;
+	left: 0%;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: rgba(0, 0, 0, 0.09) 0px 1px 2px 0px, rgba(0, 0, 0, 0.05) 0px 4px 8px 0px;
+	text-align: left;
+	padding: 5px 0px 10px 0px;
+	z-index: 9;
+	position: absolute;
+}
+
+.header > div:nth-child(3) > ul {
+	list-style: none;
+}
+
+.header > div:nth-child(3) > ul > li > a {
+	text-decoration: none;
+	color: rgb(166, 169, 171);
+	font-size: 18px;
+	font-weight: 500;
+	margin: 10px 0px 10px 0px;
+	line-height: 35px;
+}
+
+.header > div:nth-child(3) > ul > li:nth-child(4) > a {
+	margin: 10px 0px 10px 0px !important;
+	line-height: 55px;
+}
+
+.header > div:nth-child(3) > ul > li:nth-child(5) > a {
+	margin: 10px 0px 10px 0px !important;
+	line-height: 45px;
+}
+
 @media screen and (max-width: 1150px) {
 	.header {
 		width: 90%;
 		margin-left: 5%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.header > div:nth-child(2) > ul {
+		display: none;
+	}
+	.header > div:nth-child(3) {
+		display: inline-block;
 	}
 }
