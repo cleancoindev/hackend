@@ -1,0 +1,27 @@
+.header {
+	width: 1100px;
+	display: inline-block;
+	margin-left: calc((100vw - 1100px)/2);
+	height: 60px;
+	background-color: #fefefe;
+	top: 20px;
+	border-radius: 10px;
+}
+
+.normal {
+	position: absolute;
+}
+
+.fixed {
+	position: fixed;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	top: 0px;
+}
+
+@media screen and (max-width: 1150px) {
+	.header {
+		width: 90%;
+		margin-left: 5%;
+	}
+}
